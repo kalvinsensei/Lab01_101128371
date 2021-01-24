@@ -1,8 +1,6 @@
 const csv = require('csv-parser');
 const fs = require('fs');
 
-var countries = ['./canada.txt', './usa.txt'];
-
 fs.unlink('canada.txt', (err) => {
     if(err) {
         console.log(err)
